@@ -1,3 +1,4 @@
+.env
 check_env.py
 test_composio.py
 __pycache__/
