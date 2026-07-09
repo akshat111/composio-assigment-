@@ -40,6 +40,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/site/results_pass1.json data/site/results_pass2.json data/site/verification_log.json site/data.json site/index.html
+          git add data/results_pass1.json data/results_pass2.json data/verification_log.json site/data.json site/index.html
           git commit -m "Auto-update API Capability research dataset and dashboard" || exit 0
           git push origin main
