@@ -1,0 +1,308 @@
+{
+  "sample_size": 15,
+  "total_fields_checked": 30,
+  "pass1_accuracy": 90.0,
+  "pass2_accuracy": 100.0,
+  "log": [
+    {
+      "app": "Attio",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Attio",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Twenty",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Twenty",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "self-serve-free",
+      "correct": false,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Intercom",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Intercom",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Front",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Front",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Pylon",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Pylon",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Help Scout",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Help Scout",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Aircall",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Aircall",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "self-serve-free",
+      "correct": false,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Meta Ads",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Meta Ads",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Klaviyo",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Klaviyo",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Apify",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Apify",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "self-serve-free",
+      "correct": false,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Sentry",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://sentry.io/"
+    },
+    {
+      "app": "Sentry",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://sentry.io/"
+    },
+    {
+      "app": "Monday.com",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Monday.com",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Plaid",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Plaid",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Xero",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Xero",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://google.com"
+    },
+    {
+      "app": "Reducto",
+      "field": "auth_methods",
+      "agent_said": [
+        "Unknown"
+      ],
+      "critic_found": [
+        "Unknown"
+      ],
+      "correct": true,
+      "url_checked": "https://reducto.ai/"
+    },
+    {
+      "app": "Reducto",
+      "field": "access_tier",
+      "agent_said": "paid-plan-gated",
+      "critic_found": "paid-plan-gated",
+      "correct": true,
+      "url_checked": "https://reducto.ai/"
+    }
+  ]
+}

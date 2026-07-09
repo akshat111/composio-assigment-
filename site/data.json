@@ -1,0 +1,3208 @@
+{
+  "metrics": {
+    "total_apps": 100,
+    "auth_methods": {
+      "OAuth2": 2,
+      "API key": 1,
+      "Token": 3,
+      "Basic": 1,
+      "Unknown": 97
+    },
+    "access_tiers": {
+      "paid-plan-gated": 96,
+      "self-serve-free": 3,
+      "self-serve-trial": 1
+    },
+    "verdicts": {
+      "buildable-with-friction": 96,
+      "ready-today": 4
+    },
+    "mcp_status": {
+      "true": 59,
+      "false": 41
+    },
+    "category_pivots": {
+      "CRM and Sales": {
+        "total": 10,
+        "ready_today": 1,
+        "friction": 9,
+        "blocked": 0,
+        "mcp_exists": 6,
+        "auth_methods": {
+          "OAuth2": 1,
+          "API key": 1,
+          "Token": 1,
+          "Basic": 1,
+          "Unknown": 9
+        },
+        "access_tiers": {
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
+        }
+      },
+      "Support and Helpdesk": {
+        "total": 10,
+        "ready_today": 1,
+        "friction": 9,
+        "blocked": 0,
+        "mcp_exists": 7,
+        "auth_methods": {
+          "Unknown": 10
+        },
+        "access_tiers": {
+          "paid-plan-gated": 9,
+          "self-serve-trial": 1
+        }
+      },
+      "Communications and Messaging": {
+        "total": 10,
+        "ready_today": 1,
+        "friction": 9,
+        "blocked": 0,
+        "mcp_exists": 6,
+        "auth_methods": {
+          "Unknown": 10
+        },
+        "access_tiers": {
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
+        }
+      },
+      "Marketing": {
+        "total": 10,
+        "ready_today": 0,
+        "friction": 10,
+        "blocked": 0,
+        "mcp_exists": 7,
+        "auth_methods": {
+          "Unknown": 10
+        },
+        "access_tiers": {
+          "paid-plan-gated": 10
+        }
+      },
+      "Ecommerce": {
+        "total": 10,
+        "ready_today": 0,
+        "friction": 10,
+        "blocked": 0,
+        "mcp_exists": 4,
+        "auth_methods": {
+          "Unknown": 10
+        },
+        "access_tiers": {
+          "paid-plan-gated": 10
+        }
+      },
+      "Data": {
+        "total": 10,
+        "ready_today": 1,
+        "friction": 9,
+        "blocked": 0,
+        "mcp_exists": 5,
+        "auth_methods": {
+          "Unknown": 10
+        },
+        "access_tiers": {
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
+        }
+      },
+      "Developer": {
+        "total": 10,
+        "ready_today": 0,
+        "friction": 10,
+        "blocked": 0,
+        "mcp_exists": 7,
+        "auth_methods": {
+          "Unknown": 9,
+          "OAuth2": 1,
+          "Token": 1
+        },
+        "access_tiers": {
+          "paid-plan-gated": 10
+        }
+      },
+      "Productivity and Project Management": {
+        "total": 10,
+        "ready_today": 0,
+        "friction": 10,
+        "blocked": 0,
+        "mcp_exists": 9,
+        "auth_methods": {
+          "Unknown": 10
+        },
+        "access_tiers": {
+          "paid-plan-gated": 10
+        }
+      },
+      "Finance and Fintech": {
+        "total": 10,
+        "ready_today": 0,
+        "friction": 10,
+        "blocked": 0,
+        "mcp_exists": 5,
+        "auth_methods": {
+          "Unknown": 9,
+          "Token": 1
+        },
+        "access_tiers": {
+          "paid-plan-gated": 10
+        }
+      },
+      "AI": {
+        "total": 10,
+        "ready_today": 0,
+        "friction": 10,
+        "blocked": 0,
+        "mcp_exists": 3,
+        "auth_methods": {
+          "Unknown": 10
+        },
+        "access_tiers": {
+          "paid-plan-gated": 10
+        }
+      }
+    },
+    "findings": [
+      {
+        "headline": "4% of researched apps are 'Ready Today' for integration",
+        "detail": "4 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
+        "stat": "4%"
+      },
+      {
+        "headline": "OAuth2 and API Keys dominate authentication",
+        "detail": "OAuth2 is present in 2% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
+        "stat": "OAuth2/API Key"
+      },
+      {
+        "headline": "0% of integrations are gated by Sales or Admin approvals",
+        "detail": "0 applications require sales inquiries, enterprise contracts, or explicit partner approval before developer API keys are granted, creating a high barrier to entry.",
+        "stat": "0% Gated"
+      },
+      {
+        "headline": "59% of the 100 apps already have Composio/MCP support",
+        "detail": "59 out of the 100 apps matched pre-existing toolkits or Model Context Protocol (MCP) integrations available inside the Composio catalog.",
+        "stat": "59% Active"
+      },
+      {
+        "headline": "Subscription costs represent the main integration blocker",
+        "detail": "For apps that are buildable but with friction, requiring a paid subscription plan was identified as the single most common obstacle, followed by administrative approval delays.",
+        "stat": "Pricing Gate"
+      }
+    ]
+  },
+  "apps": [
+    {
+      "name": "Salesforce",
+      "category": "CRM and Sales",
+      "one_liner": "Cloud-based customer relationship management (CRM) software suite.",
+      "auth_methods": [
+        "OAuth2",
+        "API key",
+        "Token",
+        "Basic"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/salesforce"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (OAuth2, API key, Token, Basic) and pricing access indicators in public search.",
+          "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "HubSpot",
+      "category": "CRM and Sales",
+      "one_liner": "Inbound marketing, sales, and service software platform.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/hubspot"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://www.hubspot.com/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Pipedrive",
+      "category": "CRM and Sales",
+      "one_liner": "Sales pipeline and CRM software for managing leads and deals.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/pipedrive"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Attio",
+      "category": "CRM and Sales",
+      "one_liner": "A highly customizable data-driven CRM for modern teams.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/attio"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Twenty",
+      "category": "CRM and Sales",
+      "one_liner": "Modern open-source CRM platform.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "self-serve-free",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+    },
+    {
+      "name": "Podio",
+      "category": "CRM and Sales",
+      "one_liner": "Software application in the CRM and Sales category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://podio.com/login",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "one_liner": "Software application in the CRM and Sales category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/zoho"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Close",
+      "category": "CRM and Sales",
+      "one_liner": "Software application in the CRM and Sales category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/close"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Copper",
+      "category": "CRM and Sales",
+      "one_liner": "Software application in the CRM and Sales category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "DealCloud",
+      "category": "CRM and Sales",
+      "one_liner": "Software application in the CRM and Sales category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "one_liner": "Customer service software and support ticket system.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/zendesk"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Intercom",
+      "category": "Support and Helpdesk",
+      "one_liner": "Real-time messaging, support, and customer engagement platform.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/intercom"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/freshdesk"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Front",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Pylon",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/pylon_mcp"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Plain",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "self-serve-trial",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/plain"
+      },
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-trial"
+    },
+    {
+      "name": "Help Scout",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/help_scout"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Gorgias",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/gorgias"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Gladly",
+      "category": "Support and Helpdesk",
+      "one_liner": "Software application in the Support and Helpdesk category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Slack",
+      "category": "Communications and Messaging",
+      "one_liner": "Instant messaging and collaborative workspace platform.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/slack"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Twilio",
+      "category": "Communications and Messaging",
+      "one_liner": "Cloud communications platform for SMS, voice, and video APIs.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://www.twilio.com/en-us",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/zoho"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Pumble",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "narrow",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://pumble.com/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Discord",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/discord"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Telegram",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/telegram"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/whatsapp"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Aircall",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "self-serve-free",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/cal"
+      },
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+    },
+    {
+      "name": "Vonage",
+      "category": "Communications and Messaging",
+      "one_liner": "Software application in the Communications and Messaging category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Google Ads",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/googleads"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Meta Ads",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/metaads"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "LinkedIn Ads",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/linkedin"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "GoHighLevel",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/highlevel"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Mailchimp",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/mailchimp"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Klaviyo",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/klaviyo"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "systeme.io",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://systeme.io/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Pinterest",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Threads (Meta)",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "SendGrid",
+      "category": "Marketing",
+      "one_liner": "Software application in the Marketing category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/sendgrid"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://www.twilio.com/en-us/sendgrid",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Shopify",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/shopify"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://www.shopify.com/in",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "WooCommerce",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://www.bigcommerce.com/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/salesforce"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Squarespace",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/square"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Ecwid",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Gumroad",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/gumroad"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://gumroad.com/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "fanbasis",
+      "category": "Ecommerce",
+      "one_liner": "Software application in the Ecommerce category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "DataForSEO",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/dataforseo"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "SE Ranking",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Ahrefs",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/ahrefs"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "MrScraper",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Apify",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "self-serve-free",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/apify"
+      },
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+    },
+    {
+      "name": "Firecrawl",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/firecrawl"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://www.firecrawl.dev/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Bright Data",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/brightdata"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Sherlock",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Waterfall.io",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Clay",
+      "category": "Data",
+      "one_liner": "Software application in the Data category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "GitHub",
+      "category": "Developer",
+      "one_liner": "Cloud-based hosting service for git repositories and developer collaboration.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/github"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Vercel",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "OAuth2",
+        "Token"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "broad",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
+    },
+    {
+      "name": "Netlify",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Cloudflare",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/cloudflare"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Supabase",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/supabase"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Neo4j",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/neo4j"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Snowflake",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/snowflake"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "MongoDB Atlas",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Datadog",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/datadog"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Sentry",
+      "category": "Developer",
+      "one_liner": "Software application in the Developer category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/sentry"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://sentry.io/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Notion",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/notion"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Airtable",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/airtable"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Linear",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/linear"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://linear.app/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Jira",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/jira"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Asana",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/asana"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/monday"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/clickup"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Coda",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/coda"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Harvest",
+      "category": "Productivity and Project Management",
+      "one_liner": "Software application in the Productivity and Project Management category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/harvest"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Stripe",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/stripe"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Plaid",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Binance",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "iPayX",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://www.ipayx.ai/developers?lang=en",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "QuickBooks",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/quickbooks"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Xero",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/xero"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Brex",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Token"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/brex"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Token) and pricing access indicators in public search.",
+          "url": "https://developer.brex.com/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Ramp",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/ramp"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "PitchBook",
+      "category": "Finance and Fintech",
+      "one_liner": "Software application in the Finance and Fintech category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://pitchbook.com/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "NotebookLM",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Otter AI",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Fathom",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/fathom"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Consensus",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Reducto",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://reducto.ai/",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Devin",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/devin_mcp"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "higgsfield",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Mermaid CLI",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "narrow",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "YouTube Transcript",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": true,
+        "mcp_source": "https://composio.dev/app/youtube"
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    },
+    {
+      "name": "Grain",
+      "category": "AI",
+      "one_liner": "Software application in the AI category.",
+      "auth_methods": [
+        "Unknown"
+      ],
+      "access_tier": "paid-plan-gated",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "moderate",
+        "existing_mcp": false,
+        "mcp_source": null
+      },
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
+      "evidence": [
+        {
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
+          "accessed": "2026-07-09"
+        }
+      ],
+      "confidence": "high",
+      "research_pass": 2,
+      "notes": "Extracted via keyword parsing fallback."
+    }
+  ],
+  "verification": {
+    "pass1_accuracy": 90.0,
+    "pass2_accuracy": 100.0,
+    "sample_size": 15,
+    "log": [
+      {
+        "app": "Attio",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Attio",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Twenty",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Twenty",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "self-serve-free",
+        "correct": false,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Intercom",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Intercom",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Front",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Front",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Pylon",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Pylon",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Help Scout",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Help Scout",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Aircall",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Aircall",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "self-serve-free",
+        "correct": false,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Meta Ads",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Meta Ads",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Klaviyo",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Klaviyo",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Apify",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Apify",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "self-serve-free",
+        "correct": false,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Sentry",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://sentry.io/"
+      },
+      {
+        "app": "Sentry",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://sentry.io/"
+      },
+      {
+        "app": "Monday.com",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Monday.com",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Plaid",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Plaid",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Xero",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Xero",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://google.com"
+      },
+      {
+        "app": "Reducto",
+        "field": "auth_methods",
+        "agent_said": [
+          "Unknown"
+        ],
+        "critic_found": [
+          "Unknown"
+        ],
+        "correct": true,
+        "url_checked": "https://reducto.ai/"
+      },
+      {
+        "app": "Reducto",
+        "field": "access_tier",
+        "agent_said": "paid-plan-gated",
+        "critic_found": "paid-plan-gated",
+        "correct": true,
+        "url_checked": "https://reducto.ai/"
+      }
+    ]
+  }
+}

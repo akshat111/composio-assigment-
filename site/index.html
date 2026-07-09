@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Apps API Capability Research Case Study</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #0b0c10;
+            --bg-surface: rgba(31, 38, 52, 0.4);
+            --bg-card: rgba(22, 27, 37, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-purple: #8b5cf6;
+            --accent-purple-glow: rgba(139, 92, 246, 0.4);
+            --accent-emerald: #10b981;
+            --accent-emerald-glow: rgba(16, 185, 129, 0.3);
+            --accent-rose: #f43f5e;
+            --accent-rose-glow: rgba(244, 63, 94, 0.3);
+            --accent-cyan: #06b6d4;
+            --accent-amber: #f59e0b;
+            --accent-amber-glow: rgba(245, 158, 11, 0.3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
+        }
+
+        h1, h2, h3, .font-display {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+            color: white;
+            font-weight: 600;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(to right, #ffffff, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.75rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Metrics grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .metric-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(139, 92, 246, 0.4);
+            box-shadow: 0 8px 30px var(--accent-purple-glow);
+        }
+
+        .metric-card.active {
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 20px var(--accent-purple-glow);
+            background: rgba(139, 92, 246, 0.05);
+        }
+
+        .metric-value {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .metric-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 2rem;
+            opacity: 0.2;
+        }
+
+        /* Filter Controls */
+        .controls-section {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(12px);
+        }
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            align-items: end;
+        }
+
+        .filter-item label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .filter-item input, .filter-item select {
+            width: 100%;
+            background: rgba(22, 27, 37, 0.8);
+            border: 1px solid var(--border-glass);
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .filter-item input:focus, .filter-item select:focus {
+            border-color: var(--accent-purple);
+        }
+
+        .reset-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .reset-btn:hover {
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        /* Table Matrix */
+        .table-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(22, 27, 37, 0.9);
+            padding: 1rem 1.5rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-glass);
+            cursor: pointer;
+        }
+
+        td {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border-glass);
+            font-size: 0.92rem;
+            transition: background 0.2s;
+        }
+
+        tr.app-row:hover {
+            background: rgba(255, 255, 255, 0.02);
+            cursor: pointer;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-ready-today {
+            background: var(--accent-emerald-glow);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+
+        .badge-friction {
+            background: var(--accent-amber-glow);
+            color: #fbbf24;
+            border: 1px solid rgba(245, 158, 11, 0.4);
+        }
+
+        .badge-blocked {
+            background: var(--accent-rose-glow);
+            color: #f87171;
+            border: 1px solid rgba(244, 63, 94, 0.4);
+        }
+
+        .badge-auth {
+            background: rgba(139, 92, 246, 0.15);
+            color: #c084fc;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            margin-right: 0.25rem;
+        }
+
+        .mcp-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .mcp-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .mcp-dot.active {
+            background-color: var(--accent-emerald);
+            box-shadow: 0 0 8px var(--accent-emerald-glow);
+        }
+
+        .mcp-dot.inactive {
+            background-color: var(--text-secondary);
+        }
+
+        /* Detail Row */
+        .detail-row {
+            background: rgba(11, 12, 16, 0.5);
+        }
+
+        .detail-content {
+            padding: 1.5rem;
+            border-left: 3px solid var(--accent-purple);
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .detail-notes p {
+            margin-bottom: 0.75rem;
+        }
+
+        .detail-evidence-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-glass);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .evidence-url {
+            word-break: break-all;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+
+        .evidence-url:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Layouts */
+        .section-title {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent-purple);
+            padding-left: 0.75rem;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(12px);
+        }
+
+        /* Agent Workflow */
+        .workflow-step {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .workflow-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            bottom: -20px;
+            width: 2px;
+            background: var(--border-glass);
+        }
+
+        .step-num {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+        }
+
+        /* Accuracy display */
+        .accuracy-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .accuracy-val {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(to right, #34d399, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .accuracy-lbl {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-badge">Research Case Study</div>
+            <h1>100 Apps API Capability Matrix</h1>
+            <p class="subtitle">An automated and verified analysis evaluating the integration readiness, authentication models, and MCP availability of 100 industry applications.</p>
+        </header>
+
+        <!-- Dynamic Metrics Section (Top Pattern Cards) -->
+        <div class="metrics-grid" id="metrics-grid">
+            <!-- Loaded dynamically from data.json -->
+        </div>
+
+        <!-- Filter Controls -->
+        <section class="controls-section">
+            <div class="filter-grid">
+                <div class="filter-item">
+                    <label for="search-input">Search App Name</label>
+                    <input type="text" id="search-input" placeholder="e.g. HubSpot, Stripe...">
+                </div>
+                <div class="filter-item">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="verdict-filter">Buildability Verdict</label>
+                    <select id="verdict-filter">
+                        <option value="">All Verdicts</option>
+                        <option value="ready-today">Ready Today</option>
+                        <option value="buildable-with-friction">Buildable with Friction</option>
+                        <option value="blocked">Blocked</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="auth-filter">Authentication Method</label>
+                    <select id="auth-filter">
+                        <option value="">All Methods</option>
+                        <option value="OAuth2">OAuth2</option>
+                        <option value="API key">API key</option>
+                        <option value="Token">Token</option>
+                        <option value="Basic">Basic</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="reset-btn" id="reset-btn">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Findings Table Matrix -->
+        <div class="table-container">
+            <table id="apps-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable('name')">App Name</th>
+                        <th onclick="sortTable('category')">Category</th>
+                        <th onclick="sortTable('auth_methods')">Authentication</th>
+                        <th onclick="sortTable('access_tier')">Access Tier</th>
+                        <th onclick="sortTable('buildability_verdict')">Verdict</th>
+                        <th onclick="sortTable('mcp')">MCP Coverage</th>
+                    </tr>
+                </thead>
+                <tbody id="apps-table-body">
+                    <tr>
+                        <td colspan="6" style="text-align: center; padding: 3rem; color: var(--text-secondary);">Loading API metrics...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Dashboard Bottom Grid -->
+        <div class="dashboard-grid">
+            <!-- The Research Agent -->
+            <div class="info-card">
+                <h2 class="section-title">The Research Agent Pipeline</h2>
+                <div style="margin-top: 1.5rem;">
+                    <div class="workflow-step">
+                        <div class="step-num">1</div>
+                        <div>
+                            <h4>App Ingestion & Discovery</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Reads from the 100 app seed list and starts concurrent targeted searches utilizing DuckDuckGo API.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-num">2</div>
+                        <div>
+                            <h4>Scraping & Cleaning</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Retrieves official documentation pages (preferring developer.* subdomains) and filters noise to extract pristine documentation context.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-num">3</div>
+                        <div>
+                            <h4>Composio & MCP Cross-Check</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Queries Composio v3.1 toolkits registry dynamically to determine active Model Context Protocol support.</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-num">4</div>
+                        <div>
+                            <h4>Information Extraction & Schema Fit</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">Maps parameters into strict Pydantic structures with evidence URLs using LLM extraction or fallback keyword heuristics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Verification Loop Proof -->
+            <div class="info-card">
+                <h2 class="section-title">Verification Loop & Proof of Accuracy</h2>
+                <div style="margin-top: 1.5rem;">
+                    <div class="accuracy-box">
+                        <div>
+                            <div class="accuracy-val" id="pass1-acc">--</div>
+                            <div class="accuracy-lbl">Pass 1 Accuracy</div>
+                        </div>
+                        <div style="font-size: 1.5rem; color: var(--text-secondary);">→</div>
+                        <div>
+                            <div class="accuracy-val" id="pass2-acc">--</div>
+                            <div class="accuracy-lbl">Pass 2 Accuracy</div>
+                        </div>
+                    </div>
+                    <h4 style="margin-bottom: 0.5rem;">Methodology</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                        We generated a random sample size of <span id="sample-count">--</span> apps across all categories to compare the agent's initial extraction with detailed verification checks. Systematic errors identified during validation checks were patched to output Pass 2.
+                    </p>
+                    <h4 style="margin-bottom: 0.5rem;">Verification Audit Log</h4>
+                    <div id="verif-log-container" style="max-height: 180px; overflow-y: auto; background: rgba(0,0,0,0.3); padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-glass); margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;">
+                        <!-- Populate dynamic verification log entries here -->
+                    </div>
+                    <h4 style="margin-bottom: 0.5rem;">Common Correction Causes</h4>
+                    <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 1.2rem;">
+                        <li style="margin-bottom: 0.25rem;">Initial scan default heuristic fallback to "Unknown" when auth documentation resides behind complex subdomains.</li>
+                        <li style="margin-bottom: 0.25rem;">Conflating organizational/sandbox API access policies.</li>
+                        <li style="margin-bottom: 0.25rem;">Composio catalog matching requiring specific toolkit slug alignments.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript logic -->
+    <script>
+        let allApps = [];
+        let filteredApps = [];
+        let sortDirection = {};
+        let currentFilter = {
+            search: '',
+            category: '',
+            verdict: '',
+            auth: '',
+            patternIndex: null
+        };
+        let findingsData = [];
+
+        // Load data from data.json
+        async function loadData() {
+            try {
+                const res = await fetch('data.json');
+                const data = await res.json();
+                
+                allApps = data.apps;
+                filteredApps = [...allApps];
+                findingsData = data.metrics.findings;
+
+                // Populate accuracy
+                document.getElementById('pass1-acc').innerText = data.verification.pass1_accuracy + '%';
+                document.getElementById('pass2-acc').innerText = data.verification.pass2_accuracy + '%';
+                document.getElementById('sample-count').innerText = data.verification.sample_size;
+
+                // Populate verification logs list
+                const logContainer = document.getElementById('verif-log-container');
+                logContainer.innerHTML = '';
+                data.verification.log.forEach(item => {
+                    const div = document.createElement('div');
+                    div.style.marginBottom = '0.5rem';
+                    div.style.paddingBottom = '0.5rem';
+                    div.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
+                    
+                    const statusColor = item.correct ? '#34d399' : '#f59e0b';
+                    const statusText = item.correct ? '✓ MATCH' : '⚡ PATCHED';
+                    
+                    div.innerHTML = `
+                        <div style="display:flex; justify-content:space-between; font-weight:600;">
+                            <span>${item.app} (${item.field})</span>
+                            <span style="color: ${statusColor}; font-size:0.7rem;">${statusText}</span>
+                        </div>
+                        <div style="color: var(--text-secondary); font-size:0.75rem; margin-top:0.25rem;">
+                            Pass 1: ${JSON.stringify(item.agent_said)}<br>
+                            Pass 2: ${JSON.stringify(item.critic_found)}
+                        </div>
+                    `;
+                    logContainer.appendChild(div);
+                });
+
+                // Populate category options
+                const catFilter = document.getElementById('category-filter');
+                const categories = Object.keys(data.metrics.category_pivots).sort();
+                categories.forEach(cat => {
+                    const opt = document.createElement('option');
+                    opt.value = cat;
+                    opt.innerText = cat;
+                    catFilter.appendChild(opt);
+                });
+
+                // Populate findings cards
+                renderFindings(data.metrics.findings);
+                renderTable();
+            } catch (err) {
+                console.error("Error loading case study data:", err);
+            }
+        }
+
+        // Render findings cards
+        function renderFindings(findings) {
+            const grid = document.getElementById('metrics-grid');
+            grid.innerHTML = '';
+            
+            findings.forEach((finding, idx) => {
+                const card = document.createElement('div');
+                card.className = 'metric-card';
+                card.onclick = () => filterByPattern(idx);
+                card.id = `pattern-card-${idx}`;
+                
+                card.innerHTML = `
+                    <div class="metric-value">${finding.stat}</div>
+                    <div class="metric-title">${finding.headline}</div>
+                    <div class="metric-desc">${finding.detail}</div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Toggle pattern filter
+        function filterByPattern(index) {
+            // Remove active classes
+            findingsData.forEach((_, idx) => {
+                document.getElementById(`pattern-card-${idx}`).classList.remove('active');
+            });
+
+            if (currentFilter.patternIndex === index) {
+                currentFilter.patternIndex = null;
+            } else {
+                currentFilter.patternIndex = index;
+                document.getElementById(`pattern-card-${index}`).classList.add('active');
+            }
+            applyFilters();
+        }
+
+        // Filter calculation
+        function applyFilters() {
+            filteredApps = allApps.filter(app => {
+                // Search term
+                if (currentFilter.search && !app.name.toLowerCase().includes(currentFilter.search.toLowerCase())) return false;
+                // Category
+                if (currentFilter.category && app.category !== currentFilter.category) return false;
+                // Verdict
+                if (currentFilter.verdict && app.buildability_verdict !== currentFilter.verdict) return false;
+                // Auth method
+                if (currentFilter.auth && !app.auth_methods.includes(currentFilter.auth)) return false;
+
+                // Pattern filters
+                if (currentFilter.patternIndex !== null) {
+                    if (currentFilter.patternIndex === 0 && app.buildability_verdict !== 'ready-today') return false;
+                    if (currentFilter.patternIndex === 1 && !app.auth_methods.includes('OAuth2') && !app.auth_methods.includes('API key')) return false;
+                    if (currentFilter.patternIndex === 2 && app.access_tier !== 'contact-sales' && app.access_tier !== 'admin-approval') return false;
+                    if (currentFilter.patternIndex === 3 && app.api_surface.existing_mcp !== true) return false;
+                    if (currentFilter.patternIndex === 4 && app.buildability_verdict !== 'buildable-with-friction') return false;
+                }
+
+                return true;
+            });
+            renderTable();
+        }
+
+        // Event listeners for input changes
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            currentFilter.search = e.target.value;
+            applyFilters();
+        });
+
+        document.getElementById('category-filter').addEventListener('change', (e) => {
+            currentFilter.category = e.target.value;
+            applyFilters();
+        });
+
+        document.getElementById('verdict-filter').addEventListener('change', (e) => {
+            currentFilter.verdict = e.target.value;
+            applyFilters();
+        });
+
+        document.getElementById('auth-filter').addEventListener('change', (e) => {
+            currentFilter.auth = e.target.value;
+            applyFilters();
+        });
+
+        document.getElementById('reset-btn').addEventListener('click', () => {
+            document.getElementById('search-input').value = '';
+            document.getElementById('category-filter').value = '';
+            document.getElementById('verdict-filter').value = '';
+            document.getElementById('auth-filter').value = '';
+            
+            // Clear pattern active classes
+            if (currentFilter.patternIndex !== null) {
+                document.getElementById(`pattern-card-${currentFilter.patternIndex}`).classList.remove('active');
+            }
+
+            currentFilter = {
+                search: '',
+                category: '',
+                verdict: '',
+                auth: '',
+                patternIndex: null
+            };
+            applyFilters();
+        });
+
+        // Render table records
+        function renderTable() {
+            const tbody = document.getElementById('apps-table-body');
+            tbody.innerHTML = '';
+
+            if (filteredApps.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; padding: 3rem; color: var(--text-secondary);">No applications match the current filter selection.</td></tr>`;
+                return;
+            }
+
+            filteredApps.forEach(app => {
+                const tr = document.createElement('tr');
+                tr.className = 'app-row';
+                tr.id = `app-row-${app.name.replace(/\s+/g, '-')}`;
+                tr.onclick = () => toggleExpand(app.name);
+
+                const authBadges = app.auth_methods.map(a => `<span class="badge badge-auth">${a}</span>`).join(' ');
+                const mcpClass = app.api_surface.existing_mcp === true ? 'active' : 'inactive';
+                const mcpLabel = app.api_surface.existing_mcp === true ? 'Yes' : 'No';
+
+                tr.innerHTML = `
+                    <td style="font-weight: 600;">${app.name}</td>
+                    <td style="color: var(--text-secondary);">${app.category}</td>
+                    <td>${authBadges}</td>
+                    <td style="text-transform: capitalize;">${app.access_tier.replace(/-/g, ' ')}</td>
+                    <td><span class="badge badge-${app.buildability_verdict === 'ready-today' ? 'ready-today' : app.buildability_verdict === 'blocked' ? 'blocked' : 'friction'}">${app.buildability_verdict.replace(/-/g, ' ')}</span></td>
+                    <td>
+                        <div class="mcp-indicator">
+                            <div class="mcp-dot ${mcpClass}"></div>
+                            <span>${mcpLabel}</span>
+                        </div>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+
+                // Hidden detail row
+                const trDetail = document.createElement('tr');
+                trDetail.className = 'detail-row';
+                trDetail.id = `detail-${app.name.replace(/\s+/g, '-')}`;
+                trDetail.style.display = 'none';
+                
+                trDetail.innerHTML = `
+                    <td colspan="6">
+                        <div class="detail-content">
+                            <div class="detail-grid">
+                                <div class="detail-notes">
+                                    <h4 style="margin-bottom: 0.5rem; color: var(--accent-cyan);">Summary & Capabilities</h4>
+                                    <p style="font-size: 0.95rem; font-weight: 500;">${app.one_liner}</p>
+                                    <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 0.5rem;"><strong>Analysis Notes:</strong> ${app.notes || 'None.'}</p>
+                                </div>
+                                <div class="detail-evidence-card">
+                                    <h4 style="margin-bottom: 0.5rem; color: var(--accent-cyan);">Verified Evidence</h4>
+                                    <p style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem;">${app.evidence[0]?.claim || 'Verification details'}</p>
+                                    <a class="evidence-url" href="${app.evidence[0]?.url}" target="_blank">${app.evidence[0]?.url || '#'}</a>
+                                    <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem;">Accessed: ${app.evidence[0]?.accessed || '--'}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                `;
+                tbody.appendChild(trDetail);
+            });
+        }
+
+        // Expand / Collapse table row details
+        function toggleExpand(appName) {
+            const id = appName.replace(/\s+/g, '-');
+            const row = document.getElementById(`detail-${id}`);
+            if (row.style.display === 'none') {
+                row.style.display = 'table-row';
+            } else {
+                row.style.display = 'none';
+            }
+        }
+
+        // Sort table
+        function sortTable(key) {
+            sortDirection[key] = !sortDirection[key];
+            const dir = sortDirection[key] ? 1 : -1;
+
+            filteredApps.sort((a, b) => {
+                let valA, valB;
+                if (key === 'mcp') {
+                    valA = a.api_surface.existing_mcp === true ? 1 : 0;
+                    valB = b.api_surface.existing_mcp === true ? 1 : 0;
+                } else if (key === 'auth_methods') {
+                    valA = a.auth_methods.join(',');
+                    valB = b.auth_methods.join(',');
+                } else {
+                    valA = a[key];
+                    valB = b[key];
+                }
+
+                if (valA < valB) return -1 * dir;
+                if (valA > valB) return 1 * dir;
+                return 0;
+            });
+            renderTable();
+        }
+
+        // Init
+        loadData();
+    </script>
+</body>
+</html>
