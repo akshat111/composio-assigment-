@@ -117,15 +117,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "self-serve-free",
+    "access_tier": "paid-plan-gated",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": false,
       "mcp_source": null
     },
-    "buildability_verdict": "ready-today",
-    "primary_blocker": null,
+    "buildability_verdict": "buildable-with-friction",
+    "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -135,7 +135,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Podio",
@@ -441,15 +441,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "self-serve-trial",
+    "access_tier": "paid-plan-gated",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/plain"
     },
-    "buildability_verdict": "ready-today",
-    "primary_blocker": null,
+    "buildability_verdict": "buildable-with-friction",
+    "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -459,7 +459,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-trial"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Help Scout",
@@ -765,15 +765,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "self-serve-free",
+    "access_tier": "paid-plan-gated",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/cal"
     },
-    "buildability_verdict": "ready-today",
-    "primary_blocker": null,
+    "buildability_verdict": "buildable-with-friction",
+    "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -783,7 +783,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Vonage",
@@ -1467,15 +1467,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "self-serve-free",
+    "access_tier": "paid-plan-gated",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/apify"
     },
-    "buildability_verdict": "ready-today",
-    "primary_blocker": null,
+    "buildability_verdict": "buildable-with-friction",
+    "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -1485,7 +1485,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Firecrawl",
@@ -1654,8 +1654,7 @@
     "category": "Developer",
     "one_liner": "Serverless hosting portal with project deployment APIs.",
     "auth_methods": [
-      "OAuth2",
-      "Token"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -1675,7 +1674,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Netlify",

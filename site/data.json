@@ -2,20 +2,17 @@
   "metrics": {
     "total_apps": 100,
     "auth_methods": {
-      "OAuth2": 2,
+      "OAuth2": 1,
       "API key": 1,
-      "Token": 3,
+      "Token": 2,
       "Basic": 1,
-      "Unknown": 97
+      "Unknown": 98
     },
     "access_tiers": {
-      "paid-plan-gated": 96,
-      "self-serve-free": 3,
-      "self-serve-trial": 1
+      "paid-plan-gated": 100
     },
     "verdicts": {
-      "buildable-with-friction": 96,
-      "ready-today": 4
+      "buildable-with-friction": 100
     },
     "mcp_status": {
       "true": 59,
@@ -24,8 +21,8 @@
     "category_pivots": {
       "CRM and Sales": {
         "total": 10,
-        "ready_today": 1,
-        "friction": 9,
+        "ready_today": 0,
+        "friction": 10,
         "blocked": 0,
         "mcp_exists": 6,
         "auth_methods": {
@@ -36,36 +33,33 @@
           "Unknown": 9
         },
         "access_tiers": {
-          "paid-plan-gated": 9,
-          "self-serve-free": 1
+          "paid-plan-gated": 10
         }
       },
       "Support and Helpdesk": {
         "total": 10,
-        "ready_today": 1,
-        "friction": 9,
+        "ready_today": 0,
+        "friction": 10,
         "blocked": 0,
         "mcp_exists": 7,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 9,
-          "self-serve-trial": 1
+          "paid-plan-gated": 10
         }
       },
       "Communications and Messaging": {
         "total": 10,
-        "ready_today": 1,
-        "friction": 9,
+        "ready_today": 0,
+        "friction": 10,
         "blocked": 0,
         "mcp_exists": 6,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 9,
-          "self-serve-free": 1
+          "paid-plan-gated": 10
         }
       },
       "Marketing": {
@@ -96,16 +90,15 @@
       },
       "Data": {
         "total": 10,
-        "ready_today": 1,
-        "friction": 9,
+        "ready_today": 0,
+        "friction": 10,
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 9,
-          "self-serve-free": 1
+          "paid-plan-gated": 10
         }
       },
       "Developer": {
@@ -115,9 +108,7 @@
         "blocked": 0,
         "mcp_exists": 7,
         "auth_methods": {
-          "Unknown": 9,
-          "OAuth2": 1,
-          "Token": 1
+          "Unknown": 10
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -166,13 +157,13 @@
     },
     "findings": [
       {
-        "headline": "4% of researched apps are 'Ready Today' for integration",
-        "detail": "4 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
-        "stat": "4%"
+        "headline": "0% of researched apps are 'Ready Today' for integration",
+        "detail": "0 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
+        "stat": "0%"
       },
       {
         "headline": "OAuth2 and API Keys dominate authentication",
-        "detail": "OAuth2 is present in 2% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
+        "detail": "OAuth2 is present in 1% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
         "stat": "OAuth2/API Key"
       },
       {
@@ -311,15 +302,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "self-serve-free",
+      "access_tier": "paid-plan-gated",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": false,
         "mcp_source": null
       },
-      "buildability_verdict": "ready-today",
-      "primary_blocker": null,
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -329,7 +320,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+      "notes": "Extracted via keyword parsing fallback."
     },
     {
       "name": "Podio",
@@ -635,15 +626,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "self-serve-trial",
+      "access_tier": "paid-plan-gated",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/plain"
       },
-      "buildability_verdict": "ready-today",
-      "primary_blocker": null,
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -653,7 +644,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-trial"
+      "notes": "Extracted via keyword parsing fallback."
     },
     {
       "name": "Help Scout",
@@ -959,15 +950,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "self-serve-free",
+      "access_tier": "paid-plan-gated",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/cal"
       },
-      "buildability_verdict": "ready-today",
-      "primary_blocker": null,
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -977,7 +968,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+      "notes": "Extracted via keyword parsing fallback."
     },
     {
       "name": "Vonage",
@@ -1661,15 +1652,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "self-serve-free",
+      "access_tier": "paid-plan-gated",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/apify"
       },
-      "buildability_verdict": "ready-today",
-      "primary_blocker": null,
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -1679,7 +1670,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+      "notes": "Extracted via keyword parsing fallback."
     },
     {
       "name": "Firecrawl",
@@ -1848,8 +1839,7 @@
       "category": "Developer",
       "one_liner": "Software application in the Developer category.",
       "auth_methods": [
-        "OAuth2",
-        "Token"
+        "Unknown"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -1862,14 +1852,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Updated auth methods verified through targeted search.",
-          "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token",
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://vercel.com/",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
+      "notes": "Extracted via keyword parsing fallback."
     },
     {
       "name": "Netlify",
@@ -2899,7 +2889,7 @@
     }
   ],
   "verification": {
-    "pass1_accuracy": 90.0,
+    "pass1_accuracy": 100.0,
     "pass2_accuracy": 100.0,
     "sample_size": 15,
     "log": [
@@ -2939,8 +2929,8 @@
         "app": "Twenty",
         "field": "access_tier",
         "agent_said": "paid-plan-gated",
-        "critic_found": "self-serve-free",
-        "correct": false,
+        "critic_found": "paid-plan-gated",
+        "correct": true,
         "url_checked": "https://google.com"
       },
       {
@@ -3039,8 +3029,8 @@
         "app": "Aircall",
         "field": "access_tier",
         "agent_said": "paid-plan-gated",
-        "critic_found": "self-serve-free",
-        "correct": false,
+        "critic_found": "paid-plan-gated",
+        "correct": true,
         "url_checked": "https://google.com"
       },
       {
@@ -3099,8 +3089,8 @@
         "app": "Apify",
         "field": "access_tier",
         "agent_said": "paid-plan-gated",
-        "critic_found": "self-serve-free",
-        "correct": false,
+        "critic_found": "paid-plan-gated",
+        "correct": true,
         "url_checked": "https://google.com"
       },
       {
