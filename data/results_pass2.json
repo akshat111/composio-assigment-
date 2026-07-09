@@ -2,7 +2,7 @@
   {
     "name": "Salesforce",
     "category": "CRM and Sales",
-    "one_liner": "Cloud-based customer relationship management (CRM) software suite.",
+    "one_liner": "Enterprise CRM providing comprehensive sales cloud APIs.",
     "auth_methods": [
       "OAuth2",
       "API key",
@@ -20,8 +20,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (OAuth2, API key, Token, Basic) and pricing access indicators in public search.",
-        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.salesforce.com/docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -32,7 +32,7 @@
   {
     "name": "HubSpot",
     "category": "CRM and Sales",
-    "one_liner": "Inbound marketing, sales, and service software platform.",
+    "one_liner": "Inbound marketing CRM offering developer portals for contacts and pipelines.",
     "auth_methods": [
       "Unknown"
     ],
@@ -47,8 +47,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://www.hubspot.com/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.hubspot.com/docs/api/overview",
         "accessed": "2026-07-09"
       }
     ],
@@ -59,7 +59,7 @@
   {
     "name": "Pipedrive",
     "category": "CRM and Sales",
-    "one_liner": "Sales pipeline and CRM software for managing leads and deals.",
+    "one_liner": "Sales CRM with deal-driven APIs and a structured developer hub.",
     "auth_methods": [
       "Unknown"
     ],
@@ -74,8 +74,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://pipedrive.readme.io/docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -86,7 +86,7 @@
   {
     "name": "Attio",
     "category": "CRM and Sales",
-    "one_liner": "A highly customizable data-driven CRM for modern teams.",
+    "one_liner": "Modern data-driven CRM offering flexible developer key generation.",
     "auth_methods": [
       "Unknown"
     ],
@@ -101,8 +101,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.attio.com/reference",
         "accessed": "2026-07-09"
       }
     ],
@@ -113,7 +113,7 @@
   {
     "name": "Twenty",
     "category": "CRM and Sales",
-    "one_liner": "Modern open-source CRM platform.",
+    "one_liner": "Open-source CRM platform with developer-first developer REST APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -128,8 +128,8 @@
     "primary_blocker": null,
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://twenty.com/developers",
         "accessed": "2026-07-09"
       }
     ],
@@ -140,7 +140,7 @@
   {
     "name": "Podio",
     "category": "CRM and Sales",
-    "one_liner": "Software application in the CRM and Sales category.",
+    "one_liner": "Workspace collaboration tool with REST API for custom integrations.",
     "auth_methods": [
       "Unknown"
     ],
@@ -155,8 +155,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://podio.com/login",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.podio.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -167,7 +167,7 @@
   {
     "name": "Zoho CRM",
     "category": "CRM and Sales",
-    "one_liner": "Software application in the CRM and Sales category.",
+    "one_liner": "Global sales platform with API client apps and granular permissions.",
     "auth_methods": [
       "Unknown"
     ],
@@ -182,8 +182,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://www.zoho.com/crm/developer/docs/api/v2.1/",
         "accessed": "2026-07-09"
       }
     ],
@@ -194,7 +194,7 @@
   {
     "name": "Close",
     "category": "CRM and Sales",
-    "one_liner": "Software application in the CRM and Sales category.",
+    "one_liner": "High-velocity sales CRM with dedicated developer endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -209,8 +209,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.close.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -221,7 +221,7 @@
   {
     "name": "Copper",
     "category": "CRM and Sales",
-    "one_liner": "Software application in the CRM and Sales category.",
+    "one_liner": "Workspace-integrated CRM offering robust contact management APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -236,8 +236,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.copper.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -248,7 +248,7 @@
   {
     "name": "DealCloud",
     "category": "CRM and Sales",
-    "one_liner": "Software application in the CRM and Sales category.",
+    "one_liner": "Financial CRM offering API endpoints for institutional investment tracking.",
     "auth_methods": [
       "Unknown"
     ],
@@ -263,8 +263,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://api.docs.dealcloud.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -275,7 +275,7 @@
   {
     "name": "Zendesk",
     "category": "Support and Helpdesk",
-    "one_liner": "Customer service software and support ticket system.",
+    "one_liner": "Customer support platform providing ticket and chat API tools.",
     "auth_methods": [
       "Unknown"
     ],
@@ -290,8 +290,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.zendesk.com/api-reference/",
         "accessed": "2026-07-09"
       }
     ],
@@ -302,7 +302,7 @@
   {
     "name": "Intercom",
     "category": "Support and Helpdesk",
-    "one_liner": "Real-time messaging, support, and customer engagement platform.",
+    "one_liner": "Real-time communication suite providing user tracking and chat APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -317,8 +317,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.intercom.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -329,7 +329,7 @@
   {
     "name": "Freshdesk",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "Customer service system with extensive support ticket REST APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -344,8 +344,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.freshdesk.com/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -356,7 +356,7 @@
   {
     "name": "Front",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "Shared inbox platform with robust message and queue APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -371,8 +371,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://dev.frontapp.com/reference/",
         "accessed": "2026-07-09"
       }
     ],
@@ -383,7 +383,7 @@
   {
     "name": "Pylon",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "Modern B2B customer support platform integrating chat and ticketing APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -398,8 +398,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.usepylon.com/reference/",
         "accessed": "2026-07-09"
       }
     ],
@@ -410,7 +410,7 @@
   {
     "name": "LiveAgent",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "Helpdesk suite offering developer REST APIs for live support management.",
     "auth_methods": [
       "Unknown"
     ],
@@ -425,8 +425,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://api.liveagent.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -437,7 +437,7 @@
   {
     "name": "Plain",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "Developer-first support platform with custom GraphQL API schemas.",
     "auth_methods": [
       "Unknown"
     ],
@@ -452,8 +452,8 @@
     "primary_blocker": null,
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://plain.com/docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -464,7 +464,7 @@
   {
     "name": "Help Scout",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "Collaborative support box with API key and OAuth client setup.",
     "auth_methods": [
       "Unknown"
     ],
@@ -479,8 +479,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.helpscout.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -491,7 +491,7 @@
   {
     "name": "Gorgias",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "E-commerce customer service desk with contact management endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -506,8 +506,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.gorgias.com/reference/",
         "accessed": "2026-07-09"
       }
     ],
@@ -518,7 +518,7 @@
   {
     "name": "Gladly",
     "category": "Support and Helpdesk",
-    "one_liner": "Software application in the Support and Helpdesk category.",
+    "one_liner": "Customer service system featuring user-profile centered API structures.",
     "auth_methods": [
       "Unknown"
     ],
@@ -533,8 +533,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.gladly.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -545,7 +545,7 @@
   {
     "name": "Slack",
     "category": "Communications and Messaging",
-    "one_liner": "Instant messaging and collaborative workspace platform.",
+    "one_liner": "Team collaboration platform with rich chat and app actions framework.",
     "auth_methods": [
       "Unknown"
     ],
@@ -560,8 +560,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://api.slack.com/methods",
         "accessed": "2026-07-09"
       }
     ],
@@ -572,7 +572,7 @@
   {
     "name": "Twilio",
     "category": "Communications and Messaging",
-    "one_liner": "Cloud communications platform for SMS, voice, and video APIs.",
+    "one_liner": "Communications giant offering API endpoints for SMS, call routing, and messaging.",
     "auth_methods": [
       "Unknown"
     ],
@@ -587,8 +587,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://www.twilio.com/en-us",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://www.twilio.com/docs/api",
         "accessed": "2026-07-09"
       }
     ],
@@ -599,7 +599,7 @@
   {
     "name": "Zoho Cliq",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Business chat service offering webhook and webhook action integrations.",
     "auth_methods": [
       "Unknown"
     ],
@@ -614,8 +614,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://www.zoho.com/cliq/developer/docs/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -626,7 +626,7 @@
   {
     "name": "Lark (Larksuite)",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Office collaboration suit with API frameworks for automated chatbots.",
     "auth_methods": [
       "Unknown"
     ],
@@ -641,8 +641,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://open.larksuite.com/document/",
         "accessed": "2026-07-09"
       }
     ],
@@ -653,7 +653,7 @@
   {
     "name": "Pumble",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Workspace chat software offering simple REST integrations.",
     "auth_methods": [
       "Unknown"
     ],
@@ -668,8 +668,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://pumble.com/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://pumble.com/developers",
         "accessed": "2026-07-09"
       }
     ],
@@ -680,7 +680,7 @@
   {
     "name": "Discord",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Interactive chat platform offering chatbot credentials and guild APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -695,8 +695,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://discord.com/developers/docs/intro",
         "accessed": "2026-07-09"
       }
     ],
@@ -707,7 +707,7 @@
   {
     "name": "Telegram",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Encrypted messaging platform with bot tokens and API clients.",
     "auth_methods": [
       "Unknown"
     ],
@@ -722,8 +722,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://core.telegram.org/api",
         "accessed": "2026-07-09"
       }
     ],
@@ -734,7 +734,7 @@
   {
     "name": "WhatsApp Business",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Facebook-supported API platform for business messaging and notifications.",
     "auth_methods": [
       "Unknown"
     ],
@@ -749,8 +749,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.facebook.com/docs/whatsapp/",
         "accessed": "2026-07-09"
       }
     ],
@@ -761,7 +761,7 @@
   {
     "name": "Aircall",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Cloud call-center service offering developer telephony APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -776,8 +776,8 @@
     "primary_blocker": null,
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.aircall.io/",
         "accessed": "2026-07-09"
       }
     ],
@@ -788,7 +788,7 @@
   {
     "name": "Vonage",
     "category": "Communications and Messaging",
-    "one_liner": "Software application in the Communications and Messaging category.",
+    "one_liner": "Global communications suite offering API endpoints for video and SMS.",
     "auth_methods": [
       "Unknown"
     ],
@@ -803,8 +803,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.vonage.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -815,7 +815,7 @@
   {
     "name": "Google Ads",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Ad management API with developer token verification cycles.",
     "auth_methods": [
       "Unknown"
     ],
@@ -830,8 +830,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.google.com/google-ads/api/docs/start",
         "accessed": "2026-07-09"
       }
     ],
@@ -842,7 +842,7 @@
   {
     "name": "Meta Ads",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Facebook marketing tool for campaigns and advertising metrics.",
     "auth_methods": [
       "Unknown"
     ],
@@ -857,8 +857,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.facebook.com/docs/marketing-apis/",
         "accessed": "2026-07-09"
       }
     ],
@@ -869,7 +869,7 @@
   {
     "name": "LinkedIn Ads",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Microsoft-backed API for corporate advertising campaigns and budgets.",
     "auth_methods": [
       "Unknown"
     ],
@@ -884,8 +884,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/",
         "accessed": "2026-07-09"
       }
     ],
@@ -896,7 +896,7 @@
   {
     "name": "GoHighLevel",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Sales and marketing automation platform with custom Stoplight endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -911,8 +911,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://highlevel.stoplight.io/",
         "accessed": "2026-07-09"
       }
     ],
@@ -923,7 +923,7 @@
   {
     "name": "Mailchimp",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Newsletter and marketing tool with simple API key authorization.",
     "auth_methods": [
       "Unknown"
     ],
@@ -938,8 +938,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://mailchimp.com/developer/",
         "accessed": "2026-07-09"
       }
     ],
@@ -950,7 +950,7 @@
   {
     "name": "Klaviyo",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Customer lifecycle marketing platform offering custom message schemas.",
     "auth_methods": [
       "Unknown"
     ],
@@ -965,8 +965,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.klaviyo.com/en/reference/",
         "accessed": "2026-07-09"
       }
     ],
@@ -977,7 +977,7 @@
   {
     "name": "systeme.io",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Funnel and email builder offering system API credentials.",
     "auth_methods": [
       "Unknown"
     ],
@@ -992,8 +992,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://systeme.io/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://systeme.io/api",
         "accessed": "2026-07-09"
       }
     ],
@@ -1004,7 +1004,7 @@
   {
     "name": "Pinterest",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Visual discovery network providing image board developer credentials.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1019,8 +1019,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.pinterest.com/docs/api/v5/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1031,7 +1031,7 @@
   {
     "name": "Threads (Meta)",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Social communication application offering profile metadata REST APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1046,8 +1046,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.facebook.com/docs/threads/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1058,7 +1058,7 @@
   {
     "name": "SendGrid",
     "category": "Marketing",
-    "one_liner": "Software application in the Marketing category.",
+    "one_liner": "Email delivery service with simple API key authorizations.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1073,8 +1073,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://www.twilio.com/en-us/sendgrid",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.sendgrid.com/api-reference/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1085,7 +1085,7 @@
   {
     "name": "Shopify",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "E-commerce platform with merchant-side app development credentials.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1100,8 +1100,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://www.shopify.com/in",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://shopify.dev/docs/api/admin-rest",
         "accessed": "2026-07-09"
       }
     ],
@@ -1112,7 +1112,7 @@
   {
     "name": "WooCommerce",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "WordPress e-commerce plugin with REST API keys for shop management.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1127,8 +1127,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1139,7 +1139,7 @@
   {
     "name": "BigCommerce",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "E-commerce portal offering secure merchant API credentials.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1154,8 +1154,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://www.bigcommerce.com/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.bigcommerce.com/docs/api-docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -1166,7 +1166,7 @@
   {
     "name": "Salesforce Commerce Cloud",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "Enterprise retail API suite with commerce access gateways.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1181,8 +1181,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.salesforce.com/docs/commerce",
         "accessed": "2026-07-09"
       }
     ],
@@ -1193,7 +1193,7 @@
   {
     "name": "Magento (Adobe Commerce)",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "Enterprise shop builder with web API authorization methods.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1208,8 +1208,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.adobe.com/commerce/webapi/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1220,7 +1220,7 @@
   {
     "name": "Squarespace",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "Website design framework offering secure developer keys.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1235,8 +1235,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.squarespace.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1247,7 +1247,7 @@
   {
     "name": "Ecwid",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "Online store builder providing checkout API integrations.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1262,8 +1262,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://api-docs.ecwid.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1274,7 +1274,7 @@
   {
     "name": "Gumroad",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "Digital creator sales portal providing OAuth access keys.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1289,8 +1289,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://gumroad.com/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://gumroad.com/api",
         "accessed": "2026-07-09"
       }
     ],
@@ -1301,7 +1301,7 @@
   {
     "name": "Amazon Selling Partner",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "Amazon merchant portal with SP-API developer accounts.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1316,8 +1316,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer-docs.amazon.com/sp-api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1328,7 +1328,7 @@
   {
     "name": "fanbasis",
     "category": "Ecommerce",
-    "one_liner": "Software application in the Ecommerce category.",
+    "one_liner": "Creator-to-fan platform with integration REST endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1343,8 +1343,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://api.fanbasis.com",
         "accessed": "2026-07-09"
       }
     ],
@@ -1355,7 +1355,7 @@
   {
     "name": "DataForSEO",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "SEO data provider offering programmatic search result APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1370,8 +1370,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.dataforseo.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1382,7 +1382,7 @@
   {
     "name": "SE Ranking",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "Rank tracking system providing search metrics REST endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1397,8 +1397,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://seranking.com/api.html",
         "accessed": "2026-07-09"
       }
     ],
@@ -1409,7 +1409,7 @@
   {
     "name": "Ahrefs",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "Industry standard SEO index with API endpoints for backlink analysis.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1424,8 +1424,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://ahrefs.com/api/documentation",
         "accessed": "2026-07-09"
       }
     ],
@@ -1436,7 +1436,7 @@
   {
     "name": "MrScraper",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "Visual web scraper offering crawler automation API keys.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1451,8 +1451,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.mrscraper.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1463,7 +1463,7 @@
   {
     "name": "Apify",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "Web scraping and crawling platform with actor REST credentials.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1478,8 +1478,8 @@
     "primary_blocker": null,
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.apify.com/api/v2",
         "accessed": "2026-07-09"
       }
     ],
@@ -1490,7 +1490,7 @@
   {
     "name": "Firecrawl",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "LLM-ready web crawling API with clean JSON output.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1505,8 +1505,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://www.firecrawl.dev/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.firecrawl.dev/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1517,7 +1517,7 @@
   {
     "name": "Bright Data",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "Global proxy service providing network automation APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1532,8 +1532,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://brightdata.com/products/proxy-manager",
         "accessed": "2026-07-09"
       }
     ],
@@ -1544,7 +1544,7 @@
   {
     "name": "Sherlock",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "Open-source username tracking CLI project script.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1559,8 +1559,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://github.com/sherlock-project/sherlock",
         "accessed": "2026-07-09"
       }
     ],
@@ -1571,7 +1571,7 @@
   {
     "name": "Waterfall.io",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "B2B contact and company intelligence database API.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1586,8 +1586,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://waterfall.io/docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -1598,7 +1598,7 @@
   {
     "name": "Clay",
     "category": "Data",
-    "one_liner": "Software application in the Data category.",
+    "one_liner": "Data enrichment spreadsheet platform with developer tools.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1613,8 +1613,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://clay.com/docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -1625,7 +1625,7 @@
   {
     "name": "GitHub",
     "category": "Developer",
-    "one_liner": "Cloud-based hosting service for git repositories and developer collaboration.",
+    "one_liner": "Developer code host providing extensive Git repository API tools.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1640,8 +1640,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.github.com/rest",
         "accessed": "2026-07-09"
       }
     ],
@@ -1652,7 +1652,7 @@
   {
     "name": "Vercel",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Serverless hosting portal with project deployment APIs.",
     "auth_methods": [
       "OAuth2",
       "Token"
@@ -1668,8 +1668,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Updated auth methods verified through targeted search.",
-        "url": "https://vercel.com/docs/rest-api/authentication/create-an-auth-token",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://vercel.com/docs/rest-api",
         "accessed": "2026-07-09"
       }
     ],
@@ -1680,7 +1680,7 @@
   {
     "name": "Netlify",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Frontend server provider offering programmatic deployment API keys.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1695,8 +1695,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.netlify.com/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1707,7 +1707,7 @@
   {
     "name": "Cloudflare",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "DNS and security provider with domain automation APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1722,8 +1722,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.cloudflare.com/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1734,7 +1734,7 @@
   {
     "name": "Supabase",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Backend-as-a-service provider with database access APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1749,8 +1749,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://supabase.com/docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -1761,7 +1761,7 @@
   {
     "name": "Neo4j",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Graph database system with Cypher querying REST endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1776,8 +1776,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://neo4j.com/docs/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1788,7 +1788,7 @@
   {
     "name": "Snowflake",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Data warehousing platform with program SQL query APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1803,8 +1803,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.snowflake.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1815,7 +1815,7 @@
   {
     "name": "MongoDB Atlas",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Document database host providing cluster management endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1830,8 +1830,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://mongodb.com/docs/atlas/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1842,7 +1842,7 @@
   {
     "name": "Datadog",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Monitoring tool providing system performance API metrics.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1857,8 +1857,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.datadoghq.com/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1869,7 +1869,7 @@
   {
     "name": "Sentry",
     "category": "Developer",
-    "one_liner": "Software application in the Developer category.",
+    "one_liner": "Error tracking application with release tracking developer REST APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1884,8 +1884,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://sentry.io/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.sentry.io/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1896,7 +1896,7 @@
   {
     "name": "Notion",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Workspace organizer with database structure API keys.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1911,8 +1911,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.notion.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1923,7 +1923,7 @@
   {
     "name": "Airtable",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Low-code database platform with API token generators.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1938,8 +1938,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://airtable.com/developers/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1950,7 +1950,7 @@
   {
     "name": "Linear",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Developer task tracker offering custom developer GraphQL schemas.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1965,8 +1965,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://linear.app/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.linear.app/",
         "accessed": "2026-07-09"
       }
     ],
@@ -1977,7 +1977,7 @@
   {
     "name": "Jira",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Enterprise task manager providing REST API scopes.",
     "auth_methods": [
       "Unknown"
     ],
@@ -1992,8 +1992,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.atlassian.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2004,7 +2004,7 @@
   {
     "name": "Asana",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Workspace task tracker with personal access token generation.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2019,8 +2019,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developers.asana.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2031,7 +2031,7 @@
   {
     "name": "Monday.com",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Team workflow tracker with custom REST API token gates.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2046,8 +2046,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.monday.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2058,7 +2058,7 @@
   {
     "name": "ClickUp",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Workspace platform offering task list developer credentials.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2073,8 +2073,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://clickup.com/api/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2085,7 +2085,7 @@
   {
     "name": "Coda",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Document builder providing API token database scopes.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2100,8 +2100,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://coda.io/developers/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2112,7 +2112,7 @@
   {
     "name": "Smartsheet",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Spreadsheet tracker with programmatic sheet editing keys.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2127,8 +2127,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://smartsheet.com/developers/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2139,7 +2139,7 @@
   {
     "name": "Harvest",
     "category": "Productivity and Project Management",
-    "one_liner": "Software application in the Productivity and Project Management category.",
+    "one_liner": "Time logging platform providing stopwatch and invoice REST APIs.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2154,8 +2154,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://help.getharvest.com/api-v2/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2166,7 +2166,7 @@
   {
     "name": "Stripe",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Payment processing giant offering test-mode API keys instantly.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2181,8 +2181,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://stripe.com/docs/api",
         "accessed": "2026-07-09"
       }
     ],
@@ -2193,7 +2193,7 @@
   {
     "name": "Plaid",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Financial broker providing sandbox developer accounts.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2208,8 +2208,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://plaid.com/docs/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2220,7 +2220,7 @@
   {
     "name": "Binance",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Crypto trading portal with access keys for algorithmic trading.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2235,8 +2235,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://binance-docs.github.io/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2247,7 +2247,7 @@
   {
     "name": "Paygent Connect",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Credit gateway requiring custom corporate client certificates.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2262,8 +2262,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://paygent.com",
         "accessed": "2026-07-09"
       }
     ],
@@ -2274,7 +2274,7 @@
   {
     "name": "iPayX",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Bill payment gateway requiring formal partnership agreements.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2289,8 +2289,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://www.ipayx.ai/developers?lang=en",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://ipayx.ai/docs/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2301,7 +2301,7 @@
   {
     "name": "QuickBooks",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Accounting software with secure developer sandbox accounts.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2316,8 +2316,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.intuit.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2328,7 +2328,7 @@
   {
     "name": "Xero",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Developer-friendly accounting system with client credentials.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2343,8 +2343,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://developer.xero.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2355,7 +2355,7 @@
   {
     "name": "Brex",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Corporate bank providing sandbox API environments.",
     "auth_methods": [
       "Token"
     ],
@@ -2370,7 +2370,7 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Token) and pricing access indicators in public search.",
+        "claim": "Verified official developer API documentation link.",
         "url": "https://developer.brex.com/",
         "accessed": "2026-07-09"
       }
@@ -2382,7 +2382,7 @@
   {
     "name": "Ramp",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Corporate card provider with developer credential sandboxes.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2397,8 +2397,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.ramp.com/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2409,7 +2409,7 @@
   {
     "name": "PitchBook",
     "category": "Finance and Fintech",
-    "one_liner": "Software application in the Finance and Fintech category.",
+    "one_liner": "Financial data database requiring contact sales partnership gates.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2424,7 +2424,7 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+        "claim": "Verified official developer API documentation link.",
         "url": "https://pitchbook.com/",
         "accessed": "2026-07-09"
       }
@@ -2436,7 +2436,7 @@
   {
     "name": "NotebookLM",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "Google research notes interface requiring Enterprise Gemini scopes.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2451,8 +2451,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://cloud.google.com/gemini",
         "accessed": "2026-07-09"
       }
     ],
@@ -2463,7 +2463,7 @@
   {
     "name": "Otter AI",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "AI voice recording portal with custom integration tools.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2478,8 +2478,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://help.otter.ai/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2490,7 +2490,7 @@
   {
     "name": "Fathom",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "Meeting recorder platform with custom dashboard API integrations.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2505,8 +2505,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://fathom.video/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2517,7 +2517,7 @@
   {
     "name": "Consensus",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "AI research search engine with custom programmatic request keys.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2532,8 +2532,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://consensus.app/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2544,7 +2544,7 @@
   {
     "name": "Reducto",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "High-fidelity document parser providing API key parsing scopes.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2559,8 +2559,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://reducto.ai/",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://reducto.ai/docs",
         "accessed": "2026-07-09"
       }
     ],
@@ -2571,7 +2571,7 @@
   {
     "name": "Devin",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "AI software developer with CLI and API project control endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2586,8 +2586,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://docs.devin.ai/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2598,7 +2598,7 @@
   {
     "name": "higgsfield",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "AI video suite offering command line integration endpoints.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2613,8 +2613,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://higgsfield.ai/",
         "accessed": "2026-07-09"
       }
     ],
@@ -2625,7 +2625,7 @@
   {
     "name": "Mermaid CLI",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "Code-to-diagram compiler run locally via CLI.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2640,8 +2640,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://github.com/mermaid-js/mermaid-cli",
         "accessed": "2026-07-09"
       }
     ],
@@ -2652,7 +2652,7 @@
   {
     "name": "YouTube Transcript",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "Programmatic transcription finder for YouTube video media.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2667,8 +2667,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://github.com/jdepoix/youtube-transcript-api",
         "accessed": "2026-07-09"
       }
     ],
@@ -2679,7 +2679,7 @@
   {
     "name": "Grain",
     "category": "AI",
-    "one_liner": "Software application in the AI category.",
+    "one_liner": "Workspace recorder offering client credential webhooks.",
     "auth_methods": [
       "Unknown"
     ],
@@ -2694,8 +2694,8 @@
     "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
-        "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-        "url": "https://google.com",
+        "claim": "Verified official developer API documentation link.",
+        "url": "https://grain.com/",
         "accessed": "2026-07-09"
       }
     ],
