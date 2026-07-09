@@ -3,3 +3,5 @@ check_env.py
 test_composio.py
 __pycache__/
 *.pyc
+data/hiring_manager_review.md
+data/human_intervention_report.md
