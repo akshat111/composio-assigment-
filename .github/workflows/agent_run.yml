@@ -1,0 +1,45 @@
+name: Run AI Research Agent Pipeline
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs automatically every Sunday at midnight
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests beautifulsoup4 duckduckgo-search pydantic python-dotenv
+
+      - name: Run Research Agent Pipeline
+        env:
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+          # (Optional) If you decide to add LLM keys later
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          cd agent
+          python research_agent.py
+          python verification.py
+          python insights.py
+          python polish_project.py
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/site/results_pass1.json data/site/results_pass2.json data/site/verification_log.json site/data.json site/index.html
+          git commit -m "Auto-update API Capability research dataset and dashboard" || exit 0
+          git push origin main
