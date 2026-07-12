@@ -5,8 +5,8 @@
       "OAuth2": 1,
       "API key": 1,
       "Token": 2,
-      "Basic": 1,
-      "Unknown": 98
+      "Basic": 2,
+      "Unknown": 97
     },
     "access_tiers": {
       "paid-plan-gated": 100
@@ -134,7 +134,8 @@
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
-          "Unknown": 9,
+          "Unknown": 8,
+          "Basic": 1,
           "Token": 1
         },
         "access_tiers": {
@@ -2433,7 +2434,7 @@
       "category": "Finance and Fintech",
       "one_liner": "Software application in the Finance and Fintech category.",
       "auth_methods": [
-        "Unknown"
+        "Basic"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2453,7 +2454,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Basic']"
     },
     {
       "name": "iPayX",

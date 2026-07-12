@@ -2248,7 +2248,7 @@
     "category": "Finance and Fintech",
     "one_liner": "Credit gateway requiring custom corporate client certificates.",
     "auth_methods": [
-      "Unknown"
+      "Basic"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2268,7 +2268,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Basic']"
   },
   {
     "name": "iPayX",
