@@ -2,17 +2,19 @@
   "metrics": {
     "total_apps": 100,
     "auth_methods": {
-      "OAuth2": 1,
+      "OAuth2": 3,
       "API key": 1,
-      "Token": 2,
-      "Basic": 2,
-      "Unknown": 97
+      "Token": 4,
+      "Basic": 1,
+      "Unknown": 96
     },
     "access_tiers": {
-      "paid-plan-gated": 100
+      "paid-plan-gated": 98,
+      "self-serve-free": 2
     },
     "verdicts": {
-      "buildable-with-friction": 100
+      "buildable-with-friction": 98,
+      "ready-today": 2
     },
     "mcp_status": {
       "true": 59,
@@ -21,19 +23,20 @@
     "category_pivots": {
       "CRM and Sales": {
         "total": 10,
-        "ready_today": 0,
-        "friction": 10,
+        "ready_today": 1,
+        "friction": 9,
         "blocked": 0,
         "mcp_exists": 6,
         "auth_methods": {
-          "OAuth2": 1,
+          "OAuth2": 2,
           "API key": 1,
-          "Token": 1,
+          "Token": 2,
           "Basic": 1,
-          "Unknown": 9
+          "Unknown": 8
         },
         "access_tiers": {
-          "paid-plan-gated": 10
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
         }
       },
       "Support and Helpdesk": {
@@ -51,15 +54,16 @@
       },
       "Communications and Messaging": {
         "total": 10,
-        "ready_today": 0,
-        "friction": 10,
+        "ready_today": 1,
+        "friction": 9,
         "blocked": 0,
         "mcp_exists": 6,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 10
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
         }
       },
       "Marketing": {
@@ -69,7 +73,9 @@
         "blocked": 0,
         "mcp_exists": 7,
         "auth_methods": {
-          "Unknown": 10
+          "OAuth2": 1,
+          "Token": 1,
+          "Unknown": 9
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -134,8 +140,7 @@
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
-          "Unknown": 8,
-          "Basic": 1,
+          "Unknown": 9,
           "Token": 1
         },
         "access_tiers": {
@@ -158,13 +163,13 @@
     },
     "findings": [
       {
-        "headline": "0% of researched apps are 'Ready Today' for integration",
-        "detail": "0 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
-        "stat": "0%"
+        "headline": "2% of researched apps are 'Ready Today' for integration",
+        "detail": "2 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
+        "stat": "2%"
       },
       {
         "headline": "OAuth2 and API Keys dominate authentication",
-        "detail": "OAuth2 is present in 1% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
+        "detail": "OAuth2 is present in 3% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
         "stat": "OAuth2/API Key"
       },
       {
@@ -355,27 +360,28 @@
       "category": "CRM and Sales",
       "one_liner": "Software application in the CRM and Sales category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "Token"
       ],
-      "access_tier": "paid-plan-gated",
+      "access_tier": "self-serve-free",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/zoho"
       },
-      "buildability_verdict": "buildable-with-friction",
-      "primary_blocker": "Requires paid subscription plan",
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']; Corrected access_tier from paid-plan-gated to self-serve-free"
     },
     {
       "name": "Close",
@@ -789,15 +795,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "paid-plan-gated",
+      "access_tier": "self-serve-free",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/zoho"
       },
-      "buildability_verdict": "buildable-with-friction",
-      "primary_blocker": "Requires paid subscription plan",
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -807,7 +813,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
     },
     {
       "name": "Lark (Larksuite)",
@@ -1003,7 +1009,8 @@
       "category": "Marketing",
       "one_liner": "Software application in the Marketing category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -1016,14 +1023,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
     },
     {
       "name": "Meta Ads",
@@ -2434,7 +2441,7 @@
       "category": "Finance and Fintech",
       "one_liner": "Software application in the Finance and Fintech category.",
       "auth_methods": [
-        "Basic"
+        "Unknown"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2454,7 +2461,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Basic']"
+      "notes": "Extracted via keyword parsing fallback."
     },
     {
       "name": "iPayX",
