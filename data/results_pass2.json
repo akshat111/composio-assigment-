@@ -655,7 +655,7 @@
     "category": "Communications and Messaging",
     "one_liner": "Workspace chat software offering simple REST integrations.",
     "auth_methods": [
-      "Unknown"
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -675,7 +675,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
   },
   {
     "name": "Discord",
@@ -2248,7 +2248,8 @@
     "category": "Finance and Fintech",
     "one_liner": "Credit gateway requiring custom corporate client certificates.",
     "auth_methods": [
-      "Unknown"
+      "API key",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2268,7 +2269,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
   },
   {
     "name": "iPayX",
@@ -2572,7 +2573,8 @@
     "category": "AI",
     "one_liner": "AI software developer with CLI and API project control endpoints.",
     "auth_methods": [
-      "Unknown"
+      "API key",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2592,7 +2594,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
   },
   {
     "name": "higgsfield",
@@ -2653,7 +2655,9 @@
     "category": "AI",
     "one_liner": "Programmatic transcription finder for YouTube video media.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "API key",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2673,7 +2677,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token']"
   },
   {
     "name": "Grain",

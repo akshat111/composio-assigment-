@@ -2,11 +2,11 @@
   "metrics": {
     "total_apps": 100,
     "auth_methods": {
-      "OAuth2": 1,
-      "API key": 1,
-      "Token": 2,
+      "OAuth2": 2,
+      "API key": 4,
+      "Token": 6,
       "Basic": 1,
-      "Unknown": 98
+      "Unknown": 94
     },
     "access_tiers": {
       "paid-plan-gated": 100
@@ -56,7 +56,8 @@
         "blocked": 0,
         "mcp_exists": 6,
         "auth_methods": {
-          "Unknown": 10
+          "Unknown": 9,
+          "Token": 1
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -134,8 +135,9 @@
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
-          "Unknown": 9,
-          "Token": 1
+          "Unknown": 8,
+          "API key": 1,
+          "Token": 2
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -148,7 +150,10 @@
         "blocked": 0,
         "mcp_exists": 3,
         "auth_methods": {
-          "Unknown": 10
+          "Unknown": 8,
+          "API key": 2,
+          "Token": 2,
+          "OAuth2": 1
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -163,7 +168,7 @@
       },
       {
         "headline": "OAuth2 and API Keys dominate authentication",
-        "detail": "OAuth2 is present in 1% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
+        "detail": "OAuth2 is present in 2% of apps, whereas API Key auth is used by 4%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
         "stat": "OAuth2/API Key"
       },
       {
@@ -840,7 +845,7 @@
       "category": "Communications and Messaging",
       "one_liner": "Software application in the Communications and Messaging category.",
       "auth_methods": [
-        "Unknown"
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -853,14 +858,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://pumble.com/",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
     },
     {
       "name": "Discord",
@@ -2433,7 +2438,8 @@
       "category": "Finance and Fintech",
       "one_liner": "Software application in the Finance and Fintech category.",
       "auth_methods": [
-        "Unknown"
+        "API key",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2446,14 +2452,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://docs.withpaygent.com/cli/commands/authentication",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
     },
     {
       "name": "iPayX",
@@ -2757,7 +2763,8 @@
       "category": "AI",
       "one_liner": "Software application in the AI category.",
       "auth_methods": [
-        "Unknown"
+        "API key",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2770,14 +2777,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://docs.devin.ai/api-reference/authentication",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
     },
     {
       "name": "higgsfield",
@@ -2838,7 +2845,9 @@
       "category": "AI",
       "one_liner": "Software application in the AI category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "API key",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2851,14 +2860,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://developers.google.com/youtube/v3/guides/authentication",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token']"
     },
     {
       "name": "Grain",
