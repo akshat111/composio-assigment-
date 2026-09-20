@@ -655,7 +655,7 @@
     "category": "Communications and Messaging",
     "one_liner": "Workspace chat software offering simple REST integrations.",
     "auth_methods": [
-      "Token"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -675,7 +675,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Discord",
@@ -2248,8 +2248,7 @@
     "category": "Finance and Fintech",
     "one_liner": "Credit gateway requiring custom corporate client certificates.",
     "auth_methods": [
-      "API key",
-      "Token"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2269,7 +2268,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "iPayX",
@@ -2573,8 +2572,7 @@
     "category": "AI",
     "one_liner": "AI software developer with CLI and API project control endpoints.",
     "auth_methods": [
-      "API key",
-      "Token"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2594,7 +2592,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "higgsfield",
@@ -2655,9 +2653,7 @@
     "category": "AI",
     "one_liner": "Programmatic transcription finder for YouTube video media.",
     "auth_methods": [
-      "OAuth2",
-      "API key",
-      "Token"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2677,7 +2673,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token']"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Grain",
