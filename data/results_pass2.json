@@ -1494,15 +1494,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-free",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/firecrawl"
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -1512,7 +1512,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
   },
   {
     "name": "Bright Data",

@@ -9,10 +9,12 @@
       "Unknown": 98
     },
     "access_tiers": {
-      "paid-plan-gated": 100
+      "paid-plan-gated": 99,
+      "self-serve-free": 1
     },
     "verdicts": {
-      "buildable-with-friction": 100
+      "buildable-with-friction": 99,
+      "ready-today": 1
     },
     "mcp_status": {
       "true": 59,
@@ -90,15 +92,16 @@
       },
       "Data": {
         "total": 10,
-        "ready_today": 0,
-        "friction": 10,
+        "ready_today": 1,
+        "friction": 9,
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 10
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
         }
       },
       "Developer": {
@@ -157,9 +160,9 @@
     },
     "findings": [
       {
-        "headline": "0% of researched apps are 'Ready Today' for integration",
-        "detail": "0 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
-        "stat": "0%"
+        "headline": "1% of researched apps are 'Ready Today' for integration",
+        "detail": "1 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
+        "stat": "1%"
       },
       {
         "headline": "OAuth2 and API Keys dominate authentication",
@@ -1679,15 +1682,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "paid-plan-gated",
+      "access_tier": "self-serve-free",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/firecrawl"
       },
-      "buildability_verdict": "buildable-with-friction",
-      "primary_blocker": "Requires paid subscription plan",
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -1697,7 +1700,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
     },
     {
       "name": "Bright Data",
