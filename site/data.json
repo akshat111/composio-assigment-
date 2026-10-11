@@ -4,17 +4,15 @@
     "auth_methods": {
       "OAuth2": 1,
       "API key": 1,
-      "Token": 2,
+      "Token": 3,
       "Basic": 1,
-      "Unknown": 98
+      "Unknown": 97
     },
     "access_tiers": {
-      "paid-plan-gated": 99,
-      "self-serve-free": 1
+      "paid-plan-gated": 100
     },
     "verdicts": {
-      "buildable-with-friction": 99,
-      "ready-today": 1
+      "buildable-with-friction": 100
     },
     "mcp_status": {
       "true": 59,
@@ -30,9 +28,9 @@
         "auth_methods": {
           "OAuth2": 1,
           "API key": 1,
-          "Token": 1,
+          "Token": 2,
           "Basic": 1,
-          "Unknown": 9
+          "Unknown": 8
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -92,16 +90,15 @@
       },
       "Data": {
         "total": 10,
-        "ready_today": 1,
-        "friction": 9,
+        "ready_today": 0,
+        "friction": 10,
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 9,
-          "self-serve-free": 1
+          "paid-plan-gated": 10
         }
       },
       "Developer": {
@@ -160,9 +157,9 @@
     },
     "findings": [
       {
-        "headline": "1% of researched apps are 'Ready Today' for integration",
-        "detail": "1 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
-        "stat": "1%"
+        "headline": "0% of researched apps are 'Ready Today' for integration",
+        "detail": "0 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
+        "stat": "0%"
       },
       {
         "headline": "OAuth2 and API Keys dominate authentication",
@@ -276,7 +273,7 @@
       "category": "CRM and Sales",
       "one_liner": "A highly customizable data-driven CRM for modern teams.",
       "auth_methods": [
-        "Unknown"
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -296,7 +293,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
     },
     {
       "name": "Twenty",
@@ -1682,15 +1679,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "self-serve-free",
+      "access_tier": "paid-plan-gated",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/firecrawl"
       },
-      "buildability_verdict": "ready-today",
-      "primary_blocker": null,
+      "buildability_verdict": "buildable-with-friction",
+      "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -1700,7 +1697,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+      "notes": "Extracted via keyword parsing fallback."
     },
     {
       "name": "Bright Data",
@@ -2892,7 +2889,7 @@
     }
   ],
   "verification": {
-    "pass1_accuracy": 100.0,
+    "pass1_accuracy": 96.67,
     "pass2_accuracy": 100.0,
     "sample_size": 15,
     "log": [
@@ -2903,9 +2900,9 @@
           "Unknown"
         ],
         "critic_found": [
-          "Unknown"
+          "Token"
         ],
-        "correct": true,
+        "correct": false,
         "url_checked": "https://google.com"
       },
       {

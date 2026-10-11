@@ -88,7 +88,7 @@
     "category": "CRM and Sales",
     "one_liner": "Modern data-driven CRM offering flexible developer key generation.",
     "auth_methods": [
-      "Unknown"
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -108,7 +108,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
   },
   {
     "name": "Twenty",
@@ -1494,15 +1494,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "self-serve-free",
+    "access_tier": "paid-plan-gated",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/firecrawl"
     },
-    "buildability_verdict": "ready-today",
-    "primary_blocker": null,
+    "buildability_verdict": "buildable-with-friction",
+    "primary_blocker": "Requires paid subscription plan",
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -1512,7 +1512,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Bright Data",
