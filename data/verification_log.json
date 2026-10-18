@@ -1,7 +1,7 @@
 {
   "sample_size": 15,
   "total_fields_checked": 30,
-  "pass1_accuracy": 96.67,
+  "pass1_accuracy": 100.0,
   "pass2_accuracy": 100.0,
   "log": [
     {
@@ -11,9 +11,9 @@
         "Unknown"
       ],
       "critic_found": [
-        "Token"
+        "Unknown"
       ],
-      "correct": false,
+      "correct": true,
       "url_checked": "https://google.com"
     },
     {

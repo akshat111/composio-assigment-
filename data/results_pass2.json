@@ -88,7 +88,7 @@
     "category": "CRM and Sales",
     "one_liner": "Modern data-driven CRM offering flexible developer key generation.",
     "auth_methods": [
-      "Token"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -108,7 +108,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Twenty",
@@ -2680,7 +2680,8 @@
     "category": "AI",
     "one_liner": "Workspace recorder offering client credential webhooks.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "API key"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2700,6 +2701,6 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key']"
   }
 ]
