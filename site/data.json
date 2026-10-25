@@ -2,11 +2,11 @@
   "metrics": {
     "total_apps": 100,
     "auth_methods": {
-      "OAuth2": 2,
-      "API key": 2,
+      "OAuth2": 1,
+      "API key": 1,
       "Token": 2,
       "Basic": 1,
-      "Unknown": 97
+      "Unknown": 98
     },
     "access_tiers": {
       "paid-plan-gated": 100
@@ -148,9 +148,7 @@
         "blocked": 0,
         "mcp_exists": 3,
         "auth_methods": {
-          "Unknown": 9,
-          "OAuth2": 1,
-          "API key": 1
+          "Unknown": 10
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -165,7 +163,7 @@
       },
       {
         "headline": "OAuth2 and API Keys dominate authentication",
-        "detail": "OAuth2 is present in 2% of apps, whereas API Key auth is used by 2%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
+        "detail": "OAuth2 is present in 1% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
         "stat": "OAuth2/API Key"
       },
       {
@@ -2867,8 +2865,7 @@
       "category": "AI",
       "one_liner": "Software application in the AI category.",
       "auth_methods": [
-        "OAuth2",
-        "API key"
+        "Unknown"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2881,14 +2878,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Updated auth methods verified through targeted search.",
-          "url": "https://developers.grain.com/authentication.html",
+          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
+          "url": "https://google.com",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key']"
+      "notes": "Extracted via keyword parsing fallback."
     }
   ],
   "verification": {

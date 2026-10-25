@@ -2680,8 +2680,7 @@
     "category": "AI",
     "one_liner": "Workspace recorder offering client credential webhooks.",
     "auth_methods": [
-      "OAuth2",
-      "API key"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2701,6 +2700,6 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key']"
+    "notes": "Extracted via keyword parsing fallback."
   }
 ]
