@@ -2059,7 +2059,8 @@
     "category": "Productivity and Project Management",
     "one_liner": "Workspace platform offering task list developer credentials.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2079,7 +2080,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
   },
   {
     "name": "Coda",
