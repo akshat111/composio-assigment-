@@ -223,7 +223,8 @@
     "category": "CRM and Sales",
     "one_liner": "Workspace-integrated CRM offering robust contact management APIs.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "API key"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -243,7 +244,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key']"
   },
   {
     "name": "DealCloud",
@@ -630,15 +631,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-free",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": false,
       "mcp_source": null
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -648,7 +649,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
   },
   {
     "name": "Pumble",
@@ -898,7 +899,7 @@
     "category": "Marketing",
     "one_liner": "Sales and marketing automation platform with custom Stoplight endpoints.",
     "auth_methods": [
-      "Unknown"
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -918,7 +919,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
   },
   {
     "name": "Mailchimp",
@@ -927,15 +928,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-free",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/mailchimp"
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -945,7 +946,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
   },
   {
     "name": "Klaviyo",
@@ -1006,7 +1007,7 @@
     "category": "Marketing",
     "one_liner": "Visual discovery network providing image board developer credentials.",
     "auth_methods": [
-      "Unknown"
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -1026,7 +1027,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['Token']"
   },
   {
     "name": "Threads (Meta)",
@@ -1089,15 +1090,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-trial",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/shopify"
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -1107,7 +1108,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-trial"
   },
   {
     "name": "WooCommerce",
@@ -1494,15 +1495,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-free",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/firecrawl"
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -1512,7 +1513,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
   },
   {
     "name": "Bright Data",
@@ -2059,8 +2060,7 @@
     "category": "Productivity and Project Management",
     "one_liner": "Workspace platform offering task list developer credentials.",
     "auth_methods": [
-      "OAuth2",
-      "Token"
+      "Unknown"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2080,7 +2080,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
+    "notes": "Extracted via keyword parsing fallback."
   },
   {
     "name": "Coda",
@@ -2602,15 +2602,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-free",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": false,
       "mcp_source": null
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -2620,7 +2620,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
   },
   {
     "name": "Mermaid CLI",
