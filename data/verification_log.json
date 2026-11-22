@@ -1,7 +1,7 @@
 {
   "sample_size": 15,
   "total_fields_checked": 30,
-  "pass1_accuracy": 100.0,
+  "pass1_accuracy": 93.33,
   "pass2_accuracy": 100.0,
   "log": [
     {
@@ -80,8 +80,8 @@
       "app": "Front",
       "field": "access_tier",
       "agent_said": "paid-plan-gated",
-      "critic_found": "paid-plan-gated",
-      "correct": true,
+      "critic_found": "self-serve-trial",
+      "correct": false,
       "url_checked": "https://google.com"
     },
     {
@@ -151,10 +151,11 @@
         "Unknown"
       ],
       "critic_found": [
-        "Unknown"
+        "API key",
+        "Token"
       ],
-      "correct": true,
-      "url_checked": "https://google.com"
+      "correct": false,
+      "url_checked": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication/"
     },
     {
       "app": "Meta Ads",
@@ -162,7 +163,7 @@
       "agent_said": "paid-plan-gated",
       "critic_found": "paid-plan-gated",
       "correct": true,
-      "url_checked": "https://google.com"
+      "url_checked": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication/"
     },
     {
       "app": "Klaviyo",

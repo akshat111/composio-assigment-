@@ -2,17 +2,20 @@
   "metrics": {
     "total_apps": 100,
     "auth_methods": {
-      "OAuth2": 1,
-      "API key": 1,
-      "Token": 2,
-      "Basic": 1,
-      "Unknown": 98
+      "OAuth2": 6,
+      "API key": 8,
+      "Token": 9,
+      "Basic": 3,
+      "Unknown": 89
     },
     "access_tiers": {
-      "paid-plan-gated": 100
+      "paid-plan-gated": 97,
+      "self-serve-trial": 1,
+      "self-serve-free": 2
     },
     "verdicts": {
-      "buildable-with-friction": 100
+      "buildable-with-friction": 97,
+      "ready-today": 3
     },
     "mcp_status": {
       "true": 59,
@@ -38,15 +41,16 @@
       },
       "Support and Helpdesk": {
         "total": 10,
-        "ready_today": 0,
-        "friction": 10,
+        "ready_today": 1,
+        "friction": 9,
         "blocked": 0,
         "mcp_exists": 7,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 10
+          "paid-plan-gated": 9,
+          "self-serve-trial": 1
         }
       },
       "Communications and Messaging": {
@@ -56,7 +60,10 @@
         "blocked": 0,
         "mcp_exists": 6,
         "auth_methods": {
-          "Unknown": 10
+          "Unknown": 9,
+          "API key": 1,
+          "Token": 1,
+          "Basic": 1
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -69,7 +76,9 @@
         "blocked": 0,
         "mcp_exists": 7,
         "auth_methods": {
-          "Unknown": 10
+          "Unknown": 9,
+          "API key": 1,
+          "Token": 1
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -82,7 +91,11 @@
         "blocked": 0,
         "mcp_exists": 4,
         "auth_methods": {
-          "Unknown": 10
+          "Unknown": 9,
+          "OAuth2": 1,
+          "API key": 1,
+          "Token": 1,
+          "Basic": 1
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -90,15 +103,16 @@
       },
       "Data": {
         "total": 10,
-        "ready_today": 0,
-        "friction": 10,
+        "ready_today": 1,
+        "friction": 9,
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
           "Unknown": 10
         },
         "access_tiers": {
-          "paid-plan-gated": 10
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
         }
       },
       "Developer": {
@@ -108,7 +122,9 @@
         "blocked": 0,
         "mcp_exists": 7,
         "auth_methods": {
-          "Unknown": 10
+          "Unknown": 8,
+          "OAuth2": 2,
+          "Token": 2
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -134,8 +150,10 @@
         "blocked": 0,
         "mcp_exists": 5,
         "auth_methods": {
-          "Unknown": 9,
-          "Token": 1
+          "OAuth2": 1,
+          "API key": 3,
+          "Token": 2,
+          "Unknown": 6
         },
         "access_tiers": {
           "paid-plan-gated": 10
@@ -143,27 +161,31 @@
       },
       "AI": {
         "total": 10,
-        "ready_today": 0,
-        "friction": 10,
+        "ready_today": 1,
+        "friction": 9,
         "blocked": 0,
         "mcp_exists": 3,
         "auth_methods": {
-          "Unknown": 10
+          "Unknown": 9,
+          "OAuth2": 1,
+          "API key": 1,
+          "Token": 1
         },
         "access_tiers": {
-          "paid-plan-gated": 10
+          "paid-plan-gated": 9,
+          "self-serve-free": 1
         }
       }
     },
     "findings": [
       {
-        "headline": "0% of researched apps are 'Ready Today' for integration",
-        "detail": "0 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
-        "stat": "0%"
+        "headline": "3% of researched apps are 'Ready Today' for integration",
+        "detail": "3 out of 100 apps have public developer docs and self-serve access, enabling immediate LLM or workflow integration.",
+        "stat": "3%"
       },
       {
         "headline": "OAuth2 and API Keys dominate authentication",
-        "detail": "OAuth2 is present in 1% of apps, whereas API Key auth is used by 1%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
+        "detail": "OAuth2 is present in 6% of apps, whereas API Key auth is used by 8%. OAuth2 is standard in CRM and support, while API keys dominate dev tools and SEO scrapers.",
         "stat": "OAuth2/API Key"
       },
       {
@@ -545,15 +567,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "paid-plan-gated",
+      "access_tier": "self-serve-trial",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": false,
         "mcp_source": null
       },
-      "buildability_verdict": "buildable-with-friction",
-      "primary_blocker": "Requires paid subscription plan",
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -563,7 +585,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-trial"
     },
     {
       "name": "Pylon",
@@ -975,7 +997,9 @@
       "category": "Communications and Messaging",
       "one_liner": "Software application in the Communications and Messaging category.",
       "auth_methods": [
-        "Unknown"
+        "API key",
+        "Token",
+        "Basic"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -988,14 +1012,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token', 'Basic']"
     },
     {
       "name": "Google Ads",
@@ -1029,7 +1053,8 @@
       "category": "Marketing",
       "one_liner": "Software application in the Marketing category.",
       "auth_methods": [
-        "Unknown"
+        "API key",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -1042,14 +1067,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication/",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
     },
     {
       "name": "LinkedIn Ads",
@@ -1515,7 +1540,10 @@
       "category": "Ecommerce",
       "one_liner": "Software application in the Ecommerce category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "API key",
+        "Token",
+        "Basic"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -1528,14 +1556,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://github.com/FanBasis/fbnewapi",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token', 'Basic']"
     },
     {
       "name": "DataForSEO",
@@ -1679,15 +1707,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "paid-plan-gated",
+      "access_tier": "self-serve-free",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": true,
         "mcp_source": "https://composio.dev/app/firecrawl"
       },
-      "buildability_verdict": "buildable-with-friction",
-      "primary_blocker": "Requires paid subscription plan",
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -1697,7 +1725,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
     },
     {
       "name": "Bright Data",
@@ -1893,7 +1921,8 @@
       "category": "Developer",
       "one_liner": "Software application in the Developer category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -1906,14 +1935,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
     },
     {
       "name": "Supabase",
@@ -1974,7 +2003,8 @@
       "category": "Developer",
       "one_liner": "Software application in the Developer category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -1987,14 +2017,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
     },
     {
       "name": "MongoDB Atlas",
@@ -2352,7 +2382,9 @@
       "category": "Finance and Fintech",
       "one_liner": "Software application in the Finance and Fintech category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "API key",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2365,14 +2397,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://docs.stripe.com/api/authentication",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token']"
     },
     {
       "name": "Plaid",
@@ -2460,7 +2492,7 @@
       "category": "Finance and Fintech",
       "one_liner": "Software application in the Finance and Fintech category.",
       "auth_methods": [
-        "Unknown"
+        "API key"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2480,7 +2512,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key']"
     },
     {
       "name": "QuickBooks",
@@ -2595,7 +2627,7 @@
       "category": "Finance and Fintech",
       "one_liner": "Software application in the Finance and Fintech category.",
       "auth_methods": [
-        "Unknown"
+        "API key"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2608,14 +2640,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://pitchbook.com/",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://pitchbook.com/help/PitchBook-api",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key']"
     },
     {
       "name": "NotebookLM",
@@ -2649,7 +2681,9 @@
       "category": "AI",
       "one_liner": "Software application in the AI category.",
       "auth_methods": [
-        "Unknown"
+        "OAuth2",
+        "API key",
+        "Token"
       ],
       "access_tier": "paid-plan-gated",
       "api_surface": {
@@ -2662,14 +2696,14 @@
       "primary_blocker": "Requires paid subscription plan",
       "evidence": [
         {
-          "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
-          "url": "https://google.com",
+          "claim": "Updated auth methods verified through targeted search.",
+          "url": "https://connect.tryotter.com/docs/guides-authentication/",
           "accessed": "2026-07-09"
         }
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token']"
     },
     {
       "name": "Fathom",
@@ -2786,15 +2820,15 @@
       "auth_methods": [
         "Unknown"
       ],
-      "access_tier": "paid-plan-gated",
+      "access_tier": "self-serve-free",
       "api_surface": {
         "type": "REST",
         "breadth": "moderate",
         "existing_mcp": false,
         "mcp_source": null
       },
-      "buildability_verdict": "buildable-with-friction",
-      "primary_blocker": "Requires paid subscription plan",
+      "buildability_verdict": "ready-today",
+      "primary_blocker": null,
       "evidence": [
         {
           "claim": "Identified auth patterns (Unknown) and pricing access indicators in public search.",
@@ -2804,7 +2838,7 @@
       ],
       "confidence": "high",
       "research_pass": 2,
-      "notes": "Extracted via keyword parsing fallback."
+      "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
     },
     {
       "name": "Mermaid CLI",
@@ -2889,7 +2923,7 @@
     }
   ],
   "verification": {
-    "pass1_accuracy": 100.0,
+    "pass1_accuracy": 93.33,
     "pass2_accuracy": 100.0,
     "sample_size": 15,
     "log": [
@@ -2969,8 +3003,8 @@
         "app": "Front",
         "field": "access_tier",
         "agent_said": "paid-plan-gated",
-        "critic_found": "paid-plan-gated",
-        "correct": true,
+        "critic_found": "self-serve-trial",
+        "correct": false,
         "url_checked": "https://google.com"
       },
       {
@@ -3040,10 +3074,11 @@
           "Unknown"
         ],
         "critic_found": [
-          "Unknown"
+          "API key",
+          "Token"
         ],
-        "correct": true,
-        "url_checked": "https://google.com"
+        "correct": false,
+        "url_checked": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication/"
       },
       {
         "app": "Meta Ads",
@@ -3051,7 +3086,7 @@
         "agent_said": "paid-plan-gated",
         "critic_found": "paid-plan-gated",
         "correct": true,
-        "url_checked": "https://google.com"
+        "url_checked": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication/"
       },
       {
         "app": "Klaviyo",

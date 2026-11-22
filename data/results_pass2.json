@@ -360,15 +360,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-trial",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": false,
       "mcp_source": null
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -378,7 +378,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-trial"
   },
   {
     "name": "Pylon",
@@ -790,7 +790,9 @@
     "category": "Communications and Messaging",
     "one_liner": "Global communications suite offering API endpoints for video and SMS.",
     "auth_methods": [
-      "Unknown"
+      "API key",
+      "Token",
+      "Basic"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -810,7 +812,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token', 'Basic']"
   },
   {
     "name": "Google Ads",
@@ -844,7 +846,8 @@
     "category": "Marketing",
     "one_liner": "Facebook marketing tool for campaigns and advertising metrics.",
     "auth_methods": [
-      "Unknown"
+      "API key",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -864,7 +867,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key', 'Token']"
   },
   {
     "name": "LinkedIn Ads",
@@ -1330,7 +1333,10 @@
     "category": "Ecommerce",
     "one_liner": "Creator-to-fan platform with integration REST endpoints.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "API key",
+      "Token",
+      "Basic"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -1350,7 +1356,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token', 'Basic']"
   },
   {
     "name": "DataForSEO",
@@ -1494,15 +1500,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-free",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": true,
       "mcp_source": "https://composio.dev/app/firecrawl"
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -1512,7 +1518,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
   },
   {
     "name": "Bright Data",
@@ -1708,7 +1714,8 @@
     "category": "Developer",
     "one_liner": "DNS and security provider with domain automation APIs.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -1728,7 +1735,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
   },
   {
     "name": "Supabase",
@@ -1789,7 +1796,8 @@
     "category": "Developer",
     "one_liner": "Data warehousing platform with program SQL query APIs.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -1809,7 +1817,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'Token']"
   },
   {
     "name": "MongoDB Atlas",
@@ -2167,7 +2175,9 @@
     "category": "Finance and Fintech",
     "one_liner": "Payment processing giant offering test-mode API keys instantly.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "API key",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2187,7 +2197,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token']"
   },
   {
     "name": "Plaid",
@@ -2275,7 +2285,7 @@
     "category": "Finance and Fintech",
     "one_liner": "Bill payment gateway requiring formal partnership agreements.",
     "auth_methods": [
-      "Unknown"
+      "API key"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2295,7 +2305,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key']"
   },
   {
     "name": "QuickBooks",
@@ -2410,7 +2420,7 @@
     "category": "Finance and Fintech",
     "one_liner": "Financial data database requiring contact sales partnership gates.",
     "auth_methods": [
-      "Unknown"
+      "API key"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2430,7 +2440,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['API key']"
   },
   {
     "name": "NotebookLM",
@@ -2464,7 +2474,9 @@
     "category": "AI",
     "one_liner": "AI voice recording portal with custom integration tools.",
     "auth_methods": [
-      "Unknown"
+      "OAuth2",
+      "API key",
+      "Token"
     ],
     "access_tier": "paid-plan-gated",
     "api_surface": {
@@ -2484,7 +2496,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected auth from ['Unknown'] to ['OAuth2', 'API key', 'Token']"
   },
   {
     "name": "Fathom",
@@ -2601,15 +2613,15 @@
     "auth_methods": [
       "Unknown"
     ],
-    "access_tier": "paid-plan-gated",
+    "access_tier": "self-serve-free",
     "api_surface": {
       "type": "REST",
       "breadth": "moderate",
       "existing_mcp": false,
       "mcp_source": null
     },
-    "buildability_verdict": "buildable-with-friction",
-    "primary_blocker": "Requires paid subscription plan",
+    "buildability_verdict": "ready-today",
+    "primary_blocker": null,
     "evidence": [
       {
         "claim": "Verified official developer API documentation link.",
@@ -2619,7 +2631,7 @@
     ],
     "confidence": "high",
     "research_pass": 2,
-    "notes": "Extracted via keyword parsing fallback."
+    "notes": "Pass 2 corrections: Corrected access_tier from paid-plan-gated to self-serve-free"
   },
   {
     "name": "Mermaid CLI",
